@@ -1,0 +1,253 @@
+/* =========================================
+   CONTACT PAGE
+========================================= */
+
+.contact-section {
+    width: 100%;
+    min-height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 70px 20px;
+}
+
+
+/* CONTACT CONTAINER */
+
+.contact-container {
+    width: 100%;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1.6fr 1fr;
+
+    gap: 30px;
+    align-items: start;
+}
+
+
+/* =========================================
+   LEFT SIDE - CONTACT FORM
+========================================= */
+
+.contact-form-box {
+    background-color: #dcc5c5;
+    border: 1px solid #a75a5a;
+    border-radius: 12px;
+    padding: 20px 29px 27px;
+}
+
+
+/* FORM HEADING */
+
+.contact-form-box h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+
+/* FORM */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+/* INPUT FIELDS */
+
+.contact-form input:not([type="hidden"]),
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 12px;
+    background-color: white;
+    padding: 12px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    outline: none;
+}
+
+
+/* NAME AND EMAIL INPUT */
+
+.contact-form input:not([type="hidden"]) {
+    height: 42px;
+}
+
+
+/* MESSAGE TEXTAREA */
+
+.contact-form textarea {
+    height: 148px;
+    resize: vertical;
+}
+
+
+/* PLACEHOLDER TEXT */
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #cccccc;
+    font-weight: bold;
+}
+
+
+/* INPUT FOCUS */
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: 2px solid #862429;
+}
+
+
+/* =========================================
+   SUBMIT BUTTON
+========================================= */
+
+.contact-form button {
+    width: 75%;
+    height: 42px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 6px;
+    background-color: #862429;
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #641a1e;
+}
+
+
+/* =========================================
+   RIGHT SIDE - CONTACT INFORMATION
+========================================= */
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+
+/* CONTACT INFORMATION BOX */
+
+.contact-info-box {
+    width: 100%;
+    min-height: 64px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    background-color: #dcc5c5;
+    border: 1px solid #a75a5a;
+    border-radius: 12px;
+    padding: 10px 15px;
+}
+
+
+/* CONTACT ICON CONTAINER */
+
+.contact-icon {
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    /* Remove the original black circle */
+    background-color: transparent;
+    border-radius: 0;
+}
+
+/* CONTACT ICON IMAGES */
+
+.contact-icon img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+
+/* CONTACT TEXT */
+
+.contact-info-box a,
+.contact-info-box span {
+    color: black;
+
+    font-size: 16px;
+    text-decoration: none;
+
+    overflow-wrap: anywhere;
+}
+
+.contact-info-box a:hover {
+    text-decoration: underline;
+}
+
+/* FACEBOOK LINK */
+
+.facebook-link {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+
+    color: black;
+    text-decoration: none;
+}
+
+.facebook-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 768px) {
+
+    .contact-section {
+        padding: 40px 20px;
+    }
+
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .contact-form-box {
+        padding: 20px;
+    }
+
+    .contact-form-box h2 {
+        font-size: 20px;
+    }
+
+    .contact-form {
+        gap: 15px;
+    }
+
+    .contact-form button {
+        width: 100%;
+    }
+
+    .contact-info {
+        gap: 15px;
+    }
+
+    .contact-info-box {
+        min-height: 65px;
+    }
+
+}

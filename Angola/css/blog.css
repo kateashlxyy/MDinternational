@@ -1,0 +1,246 @@
+
+/* =========================================
+   BLOG CONTENT
+========================================= */
+
+.blog-section {
+    width: 100%;
+    padding: 70px 20px;
+}
+
+
+/* BLOG LAYOUT */
+
+.blog-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap: 22px;
+    align-items: start;
+}
+
+
+/* =========================================
+   FEATURED BLOG POST
+========================================= */
+
+.featured-post {
+    width: 100%;
+    height: 435px;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+}
+
+
+/* FEATURED IMAGE */
+
+.featured-post img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+
+/* IMAGE HOVER */
+
+.featured-post:hover img {
+    transform: scale(1.05);
+}
+
+
+/* DARK TEXT OVERLAY */
+
+.featured-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.65);
+}
+
+
+/* FEATURED POST TITLE */
+
+.featured-overlay h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+
+/* FEATURED POST DESCRIPTION */
+
+.featured-overlay p {
+    font-size: 16px;
+}
+
+
+/* =========================================
+   LATEST POSTS
+========================================= */
+
+.latest-posts h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 22px;
+}
+
+
+/* INDIVIDUAL BLOG POST */
+
+.blog-post {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 15px;
+    text-decoration: none;
+    color: black;
+}
+
+
+/* BLOG THUMBNAIL */
+
+.blog-post img {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 4px;
+    flex-shrink: 0;
+}
+
+
+/* BLOG POST CONTENT */
+
+.blog-post-content {
+    flex: 1;
+    min-width: 0;
+}
+
+
+/* BLOG POST TITLE */
+
+.blog-post-content h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 12px;
+}
+
+
+/* BLOG POST DESCRIPTION */
+
+.blog-post-content p {
+    font-size: 16px;
+    margin-bottom: 29px;
+}
+
+
+/* BLOG DATE */
+
+.blog-date {
+    font-size: 16px;
+    color: #999999;
+}
+
+
+/* BLOG HOVER */
+
+.blog-post:hover h3 {
+    color: #862429;
+}
+
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 600px) {
+
+    /* BLOG BANNER */
+
+    .blog-hero {
+        height: 180px;
+    }
+
+    .blog-hero h1 {
+        font-size: 28px;
+    }
+
+
+    /* BLOG CONTENT */
+
+    .blog-section {
+        padding: 30px 20px;
+    }
+
+
+    /* BLOG LAYOUT */
+
+    .blog-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+
+        max-width: 450px;
+    }
+
+
+    /* FEATURED POST */
+
+    .featured-post {
+        height: 280px;
+    }
+
+    .featured-overlay {
+        padding: 15px;
+    }
+
+    .featured-overlay h2 {
+        font-size: 18px;
+    }
+
+    .featured-overlay p {
+        font-size: 12px;
+    }
+
+
+    /* LATEST POSTS */
+
+    .latest-posts h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+
+    /* BLOG POST */
+
+    .blog-post {
+        gap: 15px;
+        margin-bottom: 20px;
+    }
+
+    .blog-post img {
+        width: 100px;
+        height: 90px;
+    }
+
+    .blog-post-content h3 {
+        font-size: 15px;
+    }
+
+    .blog-post-content p {
+        font-size: 12px;
+        line-height: 1.4;
+    }
+
+    .blog-date {
+        font-size: 11px;
+    }
+
+}

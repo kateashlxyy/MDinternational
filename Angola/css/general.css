@@ -1,0 +1,107 @@
+/* GENERAL SETTINGS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: white;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: black;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: red;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+
+/* HERO SECTION */
+
+.hero {
+    width: 100%;
+    height: 430px;
+
+    background-image: url("../img/1.jpg");
+    background-position: center;
+    opacity: 95%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+
+    position: relative;
+}
+
+/* DARK OVERLAY */
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.35);
+}
+
+.hero h1 {
+    position: relative;
+    z-index: 1;
+    color: white;
+    font-size: 56px;
+    font-weight: bold;
+    line-height: 1.15;
+}
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.main-footer {
+    width: 100%;
+    min-height: 146px;
+    background-color: #dcc5c5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+

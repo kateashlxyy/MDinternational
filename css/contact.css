@@ -161,8 +161,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-
-    /* Remove the original black circle */
     background-color: transparent;
     border-radius: 0;
 }
@@ -250,4 +248,39 @@
         min-height: 65px;
     }
 
+}
+@media (max-width: 600px) {
+
+    /* NAVIGATION */
+
+    .navbar {
+        height: auto;
+        min-height: 65px;
+
+        flex-wrap: wrap;
+        justify-content: center;
+
+        gap: 12px;
+
+        padding: 12px;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 45px;
+    }
+
+
+    /* HERO */
+
+    .hero {
+        height: 180px;
+    }
+
+    .hero h1 {
+        font-size: 25px;
+    }
 }

@@ -627,25 +627,68 @@ body {
     }
 
 
-    /* TEAM */
+    /* =========================================
+   OUR TEAM - MOBILE
+========================================= */
 
-    .team {
-        width: 90%;
-        padding-top: 40px;
-        padding-bottom: 60px;
-    }
-
-    .team h2 {
-        font-size: 20px;
-    }
+@media (max-width: 768px) {
 
     .team-container {
-        gap: 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        width: 100%;
+        max-width: 500px;
+
+        gap: 35px;
+        margin: 25px auto 0;
     }
 
-    .team-member {
-        height: 130px;
+    .team-member,
+    .team-member:not(:first-child) {
+        width: 100%;
+        min-width: 0;
+        height: auto;
+
+        padding: 0 0 25px;
+        margin: 0;
+
+        border-left: none;
+        border-bottom: 1px solid #d9d9d9;
+
+        background: transparent;
+        overflow: visible;
     }
+
+    .team-member:last-child {
+        border-bottom: none;
+    }
+
+    .team-member img {
+        display: block;
+
+        width: 100%;
+        height: 350px;
+
+        object-fit: cover;
+        object-position: center;
+
+        border-radius: 12px;
+    }
+
+    .team-info {
+        margin-top: 15px;
+    }
+
+    .team-info h3 {
+        font-size: 19px;
+        line-height: 1.3;
+    }
+
+    .team-info p {
+        font-size: 15px;
+    }
+}
 
 
     /* READ MORE BUTTON */
